@@ -1,0 +1,12 @@
+graph LR
+    A[Meteonorm Weather Matrix] --> B[PVsyst 8 Engine]
+    B -->|Hourly Yield Export| C[pvsyst_generation_profile.csv]
+    C --> D[HOMER Pro Simulation Workspace]
+    E[homer_config.json Inputs] --> D
+    
+    D --> F{Enforce Rules Gate}
+    F -->|Solar Exceeds 40MW MEC| G[Route Clipping Losses to BESS]
+    F -->|Eskom Peak Spike R3.60| H[Discharge BESS to Grid]
+    
+    G --> I[Calculate Financial LCOE & LCOS Metrics]
+    H --> I
