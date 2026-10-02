@@ -1,4 +1,4 @@
-# Engineering Case Study & Performance Optimization Report
+# Engineering Case Study & Performance Optimisation Report
 **Project Reference:** Northern Cape 50MWac Hybrid Asset Allocation  
 **Framework Engines:** PVsyst 8.1 & HOMER Pro v3.14  
 
