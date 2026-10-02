@@ -1,0 +1,45 @@
+{
+  "homer_simulation_meta": {
+    "project_name": "South African Utility Hybrid Optimisation",
+    "software_version": "HOMER Pro v3.14.2",
+    "location_vector": "Northern Cape, South Africa",
+    "analysis_type": "Grid-Connected Arbitrage & Capacity Optimisation"
+  },
+  "economics_and_finance": {
+    "project_lifetime_years": 25,
+    "nominal_discount_rate_percent": 11.5,
+    "inflation_rate_percent": 5.5,
+    "currency": "ZAR",
+    "system_fixed_om_cost_zar_year": 150000.00
+  },
+  "component_specifications": {
+    "solar_pv_array": {
+      "modeled_capacity_kw": 50000,
+      "panel_technology": "Tier-1 Bifacial Monocrystalline",
+      "capital_cost_zar_kw": 12000.00,
+      "om_cost_zar_kw_year": 180.00
+    },
+    "bess_storage_system": {
+      "chemistry_type": "Lithium Iron Phosphate (LFP)",
+      "nominal_capacity_kwh": 40000,
+      "max_power_output_kw": 20000,
+      "round_trip_efficiency_percent": 85.0,
+      "minimum_state_of_charge_percent": 10.0,
+      "expected_lifetime_years": 15
+    },
+    "utility_grid_interface": {
+      "maximum_export_capacity_kw": 40000,
+      "tariff_schedule_applied": "Eskom Megaflex (High-Demand Season)",
+      "peak_rate_zar_kwh": 3.60,
+      "standard_rate_zar_kwh": 1.50,
+      "off_peak_rate_zar_kwh": 0.75
+    }
+  },
+  "homer_dispatch_engine_rules": {
+    "dispatch_strategy_selection": "Custom Load Following & Arbitrage Logic",
+    "prevent_bess_grid_charging": true,
+    "optimise_clipping_reclamation": true,
+    "allow_bess_discharge_to_grid": true,
+    "enforce_mec_limit_gate": true
+  }
+}
