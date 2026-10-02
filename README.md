@@ -40,4 +40,5 @@ The model implements the standard high-demand season tariff pricing tiers to det
 *   **Standard Windows (R1.50 / kWh):** 06:00–07:00, 10:00–18:00, and 20:00–22:00
 *   **Off-Peak Windows (R0.75 / kWh):** 22:00–06:00
 *   [📊 View PVsyst to HOMER Software Data Pipeline](./architecture_diagram.mmd)
+👉 [View Full Case Study Report & Optimization Recommendations](./case_study_report.md)
 
